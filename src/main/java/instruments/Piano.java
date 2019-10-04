@@ -4,7 +4,7 @@ public class Piano extends Instrument {
 
     String size;
 
-    public Piano(String material, String colour, String type, String size) {
+    public Piano(String material, String colour, InstrumentType type, String size) {
         super(material, colour, type);
         this.size = size;
     }

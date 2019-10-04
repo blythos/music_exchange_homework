@@ -1,5 +1,6 @@
 package instrumentTests;
 
+import instruments.InstrumentType;
 import instruments.Saxophone;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-        saxophone = new Saxophone("metal", "gold", "brass", 3);
+        saxophone = new Saxophone("metal", "gold", InstrumentType.BRASS, 3);
     }
 
     @Test

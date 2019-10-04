@@ -4,7 +4,7 @@ public class Saxophone extends Instrument {
 
     private int valves;
 
-    public Saxophone(String material, String colour, String type, int valves) {
+    public Saxophone(String material, String colour, InstrumentType type, int valves) {
         super(material, colour, type);
         this.valves = valves;
     }
