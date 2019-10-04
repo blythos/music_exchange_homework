@@ -13,7 +13,7 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-        saxophone = new Saxophone("metal", "gold", InstrumentType.BRASS, 3);
+        saxophone = new Saxophone("metal", "gold", InstrumentType.BRASS, 3, 125, 190);
     }
 
     @Test
@@ -24,5 +24,20 @@ public class SaxophoneTest {
     @Test
     public void getValves() {
         assertEquals(3, saxophone.getValves());
+    }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(65, saxophone.calculateMarkup(), 0);
+    }
+
+    @Test
+    public void cangetSellPrice(){
+        assertEquals(190, saxophone.getSellPrice(), 0);
+    }
+
+    @Test
+    public void canGetPurchasePrice(){
+        assertEquals(125, saxophone.getPurchasePrice(), 0);
     }
 }
